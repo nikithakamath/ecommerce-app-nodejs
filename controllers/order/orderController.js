@@ -16,6 +16,14 @@ class OrderController {
      * @param {Object} request 
      * @param {Object} response 
      */
+    /* Assumptions :
+        1. Create order can include only one item with specified quantity
+        2. User is already created and has a token. Token must be created using
+        let token = jwt.sign({
+            user_id: user_id,
+            iat: Math.floor(Date.now() / 1000)
+          }, process.env.JWT_SECRET);
+     */
     createOrder(request, response) {
         let validationErr = validationResult(request);
         if (!validationErr.isEmpty()) {
