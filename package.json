@@ -1,7 +1,7 @@
 {
-  "name": "vedantu-coding-assignment",
+  "name": "ecommerce-app-nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "App to handle order creation and inventory",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
